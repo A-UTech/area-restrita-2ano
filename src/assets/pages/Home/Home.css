@@ -1,0 +1,29 @@
+body {
+    background-color: #2F3034;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    background-color: #1A7B66;
+    width: 100%;
+    min-height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 2rem;
+}
+
+.tasks-container {
+    margin-top: 27rem;
+    margin-left: 6rem;
+    margin-right: 10rem;
+}
+
+.dashboard-container {
+    margin-top: 27rem;
+}
+
+.actions-container {
+    display: flex;
+}

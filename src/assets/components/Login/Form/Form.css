@@ -5,17 +5,17 @@ form {
 }
 
 input {
-    border: 1.5px solid #FCFCFC;
-    background-color: transparent;
-    border-radius: 15px;
-    padding: 25px;
-    font-family: 'Poppins';
-    color: #FCFCFC;
-    margin-bottom: 0.5rem;
+  border: 1.5px solid #FCFCFC;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 25px;
+  color: #FCFCFC;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins';
 }
 
 button {
-    padding: 20px;
+    padding: 22px;
     border-radius: 15px;
     background-color: #FCFCFC;
 }

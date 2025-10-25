@@ -1,0 +1,23 @@
+.hello-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.hello-container h1 {
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 6rem;
+  margin-top: 10rem;
+}
+
+.hello-container h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0 0;
+  color: #FCFCFC;
+  margin-right: 6rem;
+  margin-top: 13rem;
+}

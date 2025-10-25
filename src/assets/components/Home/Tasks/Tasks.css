@@ -1,0 +1,49 @@
+.tasks-container h5 {
+    color: #FCFCFC;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.tasks-container input {
+    height: 0.8rem;
+    width: 25rem;
+    margin-right: 0.50rem;
+}
+
+.tasks-container button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #2F3034;
+    background-color: #FCFCFC;
+}
+
+.task-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.task-list ul {
+}
+
+.task-list li {
+    color: #FCFCFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 0;
+    word-break: break-word;
+    max-width: 34rem;
+}
+
+.task-list li span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.task-list li button {
+    margin-left: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
