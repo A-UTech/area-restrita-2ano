@@ -1,20 +1,15 @@
-import { useState } from 'react'
-import Form from './assets/components/form/form.jsx'
-import Title from './assets/components/title/title.jsx'
-import './App.css'
-import Wordmark from './assets/components/Wordmark/Wordmark.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './assets/pages/Login/Login'
+import Home from './assets/pages/Home/Home'
 
 function App() {
   return (
-    <>
-      <div className="form-container">
-        <div className="form-content">
-          <Title />
-          <Form />
-          <Wordmark />
-        </div>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 
