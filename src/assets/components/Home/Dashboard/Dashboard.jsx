@@ -23,12 +23,8 @@ const Dashboard = () => {
                 <p>{formatDate()}</p>
             </div>
             <div>
-                <iframe 
-                    title="DashBoardAreaRestrita" 
-                    width="600" height="373.5" 
-                    src="https://app.powerbi.com/view?r=eyJrIjoiMDliOTgyMmMtOWI0MS00N2U1LWE1ZWEtYmMwY2UxYjdlYjAzIiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9" 
-                    frameborder="0" 
-                    allowFullScreen="true"></iframe>
+                <iframe title="DashAreaRestrita" 
+                width="600" height="370" src="https://app.powerbi.com/view?r=eyJrIjoiMGRiNDE4NGEtOTViOS00ZGFhLTk1NGUtMzk2MjUyMThiOGU3IiwidCI6ImIxNDhmMTRjLTIzOTctNDAyYy1hYjZhLTFiNDcxMTE3N2FjMCJ9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
     );

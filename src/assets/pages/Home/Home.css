@@ -7,7 +7,7 @@ body {
 .home-container {
     background-color: #1A7B66;
     width: 100%;
-    min-height: 50vh;
+    height: fit-content;
     position: absolute;
     top: 0;
     left: 0;
