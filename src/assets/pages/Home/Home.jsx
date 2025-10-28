@@ -3,11 +3,13 @@ import Hello from '../../components/Home/Hello/Hello'
 import Profile from '../../components/Home/Profile/Profile';
 import Tasks from '../../components/Home/Tasks/Tasks';
 import Dashboard from '../../components/Home/Dashboard/Dashboard';
+import Menu from '../../components/Home/Menu/Menu';
 
 function Home() {
   return (
     <div>
       <div className="home-container">
+        <Menu />
         <Hello />
         <Profile />
       </div>

@@ -24,7 +24,7 @@ const Form = ({ onLogin }) => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Entrar</button>
+      <button className="login" type="submit">Entrar</button>
       <p>Esqueceu sua senha? Redefinir</p>
     </form>
   )

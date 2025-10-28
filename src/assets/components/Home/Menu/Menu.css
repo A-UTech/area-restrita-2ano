@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    font-weight: 500;
+    color:  #FCFCFC;
+    font-size: 20px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.logo img {
+    margin-right: 1.5rem;
+}
+
+.navbar button {
+    background-color: #2F3034;
+    color: #FCFCFC;
+    font-family: 'Poppins';
+    height: fit-content;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    border-radius: 30px;
+}
+

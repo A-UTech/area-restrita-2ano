@@ -1,19 +1,48 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Tasks.css'
+import lixeira from "../../../icons/ic_lixeira.svg"
 
 const Tasks = () => {
-    const [tasks, setTasks] = useState([])
+    const [tasks, setTasks] = useState(() => {
+        try {
+            return JSON.parse(localStorage.getItem('tasks')) || []
+        } catch {
+            return []
+        }
+    })
+    
     const [novaTask, setNovaTask] = useState("")
+    const [tasksConcluidas, setTasksConcluidas] = useState(() => {
+        try {
+            return JSON.parse(localStorage.getItem('tasksConcluidas')) || []
+        } catch {
+            return []
+        }
+    })
+
+    useEffect(() => {
+        localStorage.setItem('tasks', JSON.stringify(tasks))
+        localStorage.setItem('tasksConcluidas', JSON.stringify(tasksConcluidas))
+    }, [tasks, tasksConcluidas])
 
     const adicionarTask = () => {
         if (novaTask.trim() === "") return
-        setTasks([...tasks, novaTask])
+        setTasks(prev => [...prev, novaTask])
+        setTasksConcluidas(prev => [...prev, false])
         setNovaTask("")
     }
 
-    const removeTask = (index) => {
-        const newTasks = tasks.filter((_, i) => i !== index)
-        setTasks(newTasks)
+    const removerTask = (index) => {
+        setTasks(prev => prev.filter((_, i) => i !== index))
+        setTasksConcluidas(prev => prev.filter((_, i) => i !== index))
+    }
+
+    const alternarTask = (index) => {
+        setTasksConcluidas(prev => {
+            const novas = [...prev]
+            novas[index] = !novas[index]
+            return novas
+        })
     }
 
     return (
@@ -27,10 +56,17 @@ const Tasks = () => {
             <button onClick={adicionarTask}>Adicionar</button>
 
             <ul className="task-list">
-                {tasks.map((task, index) => (
-                    <li key={index}>
-                        <span>{task}</span> 
-                        <button onClick={() => removeTask(index)}>✖</button>
+                {tasks.map((tarefa, indice) => (
+                    <li key={indice}>
+                        <input 
+                            type="checkbox"
+                            checked={tasksConcluidas[indice] || false}
+                            onChange={() => alternarTask(indice)}
+                        />
+                        <span style={{ textDecoration: tasksConcluidas[indice] ? 'line-through' : 'none' }}>
+                            {tarefa}
+                        </span>
+                        <img src={lixeira} onClick={() => removerTask(indice)} alt="Remover tarefa" />
                     </li>
                 ))}
             </ul>

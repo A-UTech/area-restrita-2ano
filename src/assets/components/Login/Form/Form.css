@@ -14,10 +14,10 @@ input {
   font-family: 'Poppins';
 }
 
-button {
-    padding: 22px;
-    border-radius: 15px;
-    background-color: #FCFCFC;
+.login button {
+  padding: 22px;
+  border-radius: 15px;
+  background-color: #FCFCFC;
 }
 
 .form-container {
@@ -39,7 +39,7 @@ button {
 }
 
 p {
-    text-align: center;
-    color: #808080;
-    font-size: 0.8rem;
+  text-align: center;
+  color: #808080;
+  font-size: 0.8rem;
 }
