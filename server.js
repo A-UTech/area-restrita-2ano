@@ -1,20 +1,21 @@
-// server.js
-import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
+import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const app = express();
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const app = express()
+const port = process.env.PORT || 5173
 
-app.use(express.static(path.join(__dirname, "dist")));
+// Serve arquivos estáticos (o build do React)
+app.use(express.static(path.join(__dirname, 'dist')))
 
-app.get("*", (_, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
+// Redireciona qualquer rota pro index.html (SPA)
+app.get('*', (_, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'))
+})
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`✅ Servidor rodando na porta ${PORT}`);
-});
+app.listen(port, () => {
+  console.log(`🚀 Servidor rodando na porta ${port}`)
+})
