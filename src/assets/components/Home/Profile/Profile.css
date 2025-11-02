@@ -1,29 +1,25 @@
 .profile-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-  margin-top: 30px;
-  margin-left: 6rem;
+  margin-left: 6.25rem;
   margin-top: 3.5rem;
-}
-
-.profile-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+  position: relative;
 }
 
 .profile-name {
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
 }
 
 .profile-name h4 {
   font-size: 25px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  color: #fcfcfc;
+  font-family: 'Poppins', sans-serif;
 }
 
 .profile-name img {
@@ -36,4 +32,59 @@
   font-size: 16px;
   margin-top: 4px;
   color: #fcfcfc;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+}
+
+.edit-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.name-input {
+  width: 130px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 2px solid #004d40;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn,
+.cancel-btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.2s ease;
+}
+
+.save-btn {
+  background-color: #00695c;
+  color: #fff;
+}
+
+.save-btn:hover {
+  background-color: #004d40;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #b3b3b3;
 }

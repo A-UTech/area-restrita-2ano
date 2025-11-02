@@ -51,6 +51,7 @@ const Form = () => {
 
       if (userType === 'admin') {
         localStorage.setItem('userRole', userType)
+        localStorage.setItem('userEmail', email)
         window.location.href = '/home'
       } else {
         setMessage('Acesso restrito. Apenas administradores podem entrar.')
