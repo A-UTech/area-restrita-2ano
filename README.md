@@ -32,7 +32,10 @@ area-restrita-2ano/
 │  
 ├── package.json # Dependências e scripts do projeto  
 ├── README.md # Este arquivo  
-└── ...  
+├── Dockerfile # Para subir este site ao Render
+├── .dockerignore # Ignora arquivos e pastas para não sobrecarregar o Render
+├── server.js # Configuração de Port para o Render
+└── vite.config.js # Configuração de Port para o Render
 
 ---
 
@@ -49,3 +52,6 @@ area-restrita-2ano/
    
 6. Acesse pelo navegador:
     http://localhost:3000
+
+7. Link do site no Render
+    https://area-restrita-2ano.onrender.com/
