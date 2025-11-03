@@ -1,16 +1,51 @@
-# React + Vite
+# 🧩 Área Restrita — IGesta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A *Área Restrita* foi desenvolvida para uso dos *administradores e desenvolvedores do IGesta*.  
+Sua principal função é *centralizar e exibir os dashboards do Power BI*.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Funcionalidades Principais
 
-## React Compiler
+- 🔐 Login autenticado  
+- 📊 Integração direta com Power BI 
+- 🧾 Monitoramento de tarefas  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML / CSS / JavaScript
+- React
+- Power BI Embedded
+
+---
+
+## 🧱 Estrutura do Projeto
+
+area-restrita-2ano/  
+│  
+├── src/  
+│ ├── components/ # Componentes  reutilizáveis  
+│ ├── pages/ # Páginas principais (Login e Home)  
+│ └── assets/ # Ícones, imagens e estilos  
+│  
+├── package.json # Dependências e scripts do projeto  
+├── README.md # Este arquivo  
+└── ...  
+
+---
+
+## 🧑‍💻 Como Executar o Projeto
+
+1. Clone o repositório:
+   bash
+   git clone https://github.com/A-UTech/area-restrita-2ano.git
+2. Instale as dependências:
+    npm install
+   
+4. Execute o servidor local:
+    npm run dev
+   
+6. Acesse pelo navegador:
+    http://localhost:3000
